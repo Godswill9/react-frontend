@@ -1,0 +1,109 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.logo{
+    margin: 5px;
+    padding: 3px;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: cursive;
+    background-color: rgb(33, 23, 172);
+    border-radius: 4px;
+}
+.cont{
+    display: flex;
+    height:3em;
+    width:100%;
+    background-color: rgb(89, 89, 247);
+    color:white;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.links{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.links:hover>.dropDown{
+    height:13em
+}
+.navLinks{
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+}
+.navLinks span{
+    color:black;
+    display: block;;
+    margin:3px;
+    padding:2px
+}
+.navLinks span a{
+    text-decoration: none;
+    color:white;
+    padding-right: 3px;
+    transition: 0.4s ease-in-out;
+}
+.navLinks span a:hover{
+    background-color:orangered;
+    padding: 5px;
+    border-radius: 5px;
+}
+.mobileMenu{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-right: 10px;
+    display: none;
+    z-index: 1;
+}
+.dropDown{
+    width:10em;
+    z-index: 3;
+    transform: translateX(11em); 
+    transition: .2s ease-in;
+    background-color: rgb(126, 121, 121);
+}
+.translateIn{
+    transform: translateX(0)
+}
+.dropDown span{
+    display: block;
+    margin:5px;
+    background-color: rgb(216, 149, 25);
+    padding:11px;
+}
+.dropDown span:hover{
+    background-color: red;
+}
+.dropDown span a{
+    text-decoration: none;
+    color:white;
+}
+.menu{
+   padding:4px;
+   display: inline-block;
+   margin: 8px;
+   background-color: rgb(9, 71, 92);
+   border-radius: 5px ;
+}
+
+.menu:hover{
+    background-color: red;
+  }
+
+  @media (max-width:600px) {
+    .mobileMenu{
+        display:flex ;
+    }
+    .links{
+        display: none;
+    }
+    .logo{
+        font-size: 19px;
+    }
+  }

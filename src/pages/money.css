@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.containerFund{ 
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(161, 153, 153);
+}
+.containerFund h2{
+    margin-bottom: 15px;
+    padding: 5px;
+    color: rgb(255, 238, 238);
+}
+.containerFund form{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    background-color: rgb(197, 186, 186);
+    border-radius: 10px;
+    padding:30px
+}
+.containerFund form button{
+    padding: 10px;
+    margin-top: 26px;
+    transition: 0.3s ease-in-out;
+    border:1px solid white;
+    border-radius: 3px;
+}
+.containerFund form button:hover{
+    background-color: orange;
+    
+}
+.containerFund form label{
+    margin: 5px;
+}
+.containerFund form input{
+    height:3em;
+    border-radius: 6px;
+    padding:9px;
+    margin-bottom: 10px;
+    border: 0.2px solid white;
+}

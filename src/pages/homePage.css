@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: rgb(161, 153, 153);
+}
+.container div{
+    padding:10px;
+    width:40em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(255, 255, 255)
+}
+.container div img{
+    height: 25em;
+    width:19em;
+    border-radius: 10px;
+    padding: 13px;
+    background-color: gray;
+}
+.container div button{
+  padding:5px;
+  margin: 5px;
+}
+.container div h1{
+     font-size: 38px;
+     color:white
+}
+.container div span a{
+     text-decoration: none;
+     color:rgb(128, 84, 5);
+     font-weight: bold;
+}
+.container div p{
+     font-size: 21px;
+}
+.moreDetails{
+    margin-top: 30px;;
+    padding: 18px;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  flex-direction: column-reverse;
+  background-color: rgb(199, 194, 194);
+}
+.moreDetails img{
+    height:21em;
+    border-radius: 10px;
+}
+.moreDetails p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.containerHome{
+    background-color: rgb(161, 153, 153);
+    height:140vh;
+    padding:12px
+}
+
+/* homepage styling */
+.containerHome button{
+    padding:5px;
+    margin: 5px;
+    margin-top: 30px;
+}
+.headd{
+    margin:1px;
+    padding: 5px;
+
+}
+.headd h2{
+    margin-top:10px;
+    padding:3px;
+    border-left: 5px solid black;
+    background-color: rgb(194, 185, 185);
+    padding:10px;
+}
+.headd p{
+    margin-top:10px;
+    padding:3px;
+}
+.headd p h3{
+  display: inline;
+}
+.history{
+    padding: 10px;
+    margin:5px
+}
+table{
+    border-collapse: collapse;
+    width:60em
+}
+
+table, th ,td{
+border:2px solid black;
+text-align: center;
+}
+th,td{
+    padding:14px
+}
+table p{
+    text-align: center;
+}
+@media (max-width:994px) {
+    table{
+        width:50em
+    }
+    th,td{
+        padding:10px
+    }
+}
+@media (max-width:831px) {
+    table{
+        width:40em
+    }
+    th,td{
+        padding:7px
+    }
+}
+@media (max-width:692px) {
+    table{
+        width:25em
+    }
+    th,td{
+        padding:4px
+    }
+}
+@media (max-width:425px) {
+    table{
+        width:10em
+    }
+    th,td{
+        padding:2px
+    }
+}
